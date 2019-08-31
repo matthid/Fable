@@ -8,6 +8,8 @@
     <PackageReference Include="Expecto" Version="5.1.2" />
     <PackageReference Include="AltCover" Version="5.3.675" />
     <PackageReference Include="FSharp.Core" Version="4.5.2" />
+    <PackageReference Include="Fable.Node" Version="1.0.1" />
+    <PackageReference Include="Fable.Promise" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/Fable.Core/Fable.Core.fsproj" />
@@ -16,6 +18,7 @@
     <ProjectReference Include="../Project With Spaces/Fable.Tests.Spaces.fsproj" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="imports/SourceMap.fs" />
     <Compile Include="Util/b.fs" />
     <Compile Include="Util/Thoth.Json.Decode.fs" />
     <Compile Include="Util/Aether.fs" />
@@ -56,6 +59,7 @@
     <Compile Include="SeqExpressionTests.fs" />
     <Compile Include="SeqTests.fs" />
     <Compile Include="SetTests.fs" />
+    <Compile Include="SourceMapTests.fs" />
     <Compile Include="StringTests.fs" />
     <Compile Include="SudokuTest.fs" />
     <Compile Include="TailCallTests.fs" />

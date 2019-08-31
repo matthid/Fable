@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <OtherFlags>$(OtherFlags) --crossoptimize-</OtherFlags>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Expecto" Version="5.1.2" />
+    <PackageReference Include="FSharp.Core" Version="4.5.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Fable.Core/Fable.Core.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="simple-range.fs" />
+  </ItemGroup>
+</Project>

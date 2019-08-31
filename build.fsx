@@ -135,6 +135,7 @@ let test() =
         buildLibrary()
 
     cleanDirs ["build/tests"]
+    buildSplitter "tests/SourceMaps"
     buildSplitter "tests"
     run "npx mocha build/tests --reporter dot -t 10000"
     runInDir "tests/Main" "dotnet run"
