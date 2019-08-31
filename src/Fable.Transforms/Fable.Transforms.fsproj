@@ -10,7 +10,9 @@
     <Compile Include="Global/Compiler.fs" />
     <Compile Include="AST/AST.Common.fs" />
     <Compile Include="AST/AST.Fable.fs" />
+    <Compile Include="AST/AST.Fable.TypeDef.fs" />
     <Compile Include="AST/AST.Babel.fs" />
+    <Compile Include="AST/AST.TypeScript.fs" />
     <Compile Include="MonadicTrampoline.fs" />
     <Compile Include="Transforms.Util.fs" />
     <Compile Include="OverloadSuffix.fs" />
@@ -20,6 +22,7 @@
     <Compile Include="Inject.fs" />
     <Compile Include="FSharp2Fable.fs" />
     <Compile Include="FableTransforms.fs" />
+    <Compile Include="Fable2Tsd.fs" />
     <Compile Include="Fable2Babel.fs" />
     <Compile Include="State.fs" />
   </ItemGroup>

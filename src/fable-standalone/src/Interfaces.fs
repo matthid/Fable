@@ -43,8 +43,11 @@ type IParseResults =
     abstract Errors: Error[]
 
 type IBabelResult =
+    // Fable.AST.Babel.Program
     abstract BabelAst: obj
     abstract FableErrors: Error[]
+    // Fable.AST.Fable.
+    abstract FableTypeDefinitions: obj
 
 type IFableManager =
     abstract CreateChecker: references: string[] * readAllBytes: (string -> byte[]) * defines: string[] * optimize: bool -> IChecker
